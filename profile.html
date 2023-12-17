@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--Embedded Styling-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--MAIN STYLE.css-->
+  <style>
+    body {
+      background-color: transparent;
+      color: black;
+    }
+
+    a {
+      padding: 4px auto;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.2);
+    }
+
+    .profile-content {
+      margin-top: 0px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.1);
+    }
+
+    #ssPfp {
+      height: 30%;
+    }
+
+    .highlight {
+      background-color: yellow;
+      position: relative;
+      font-weight: bold;
+    }
+  </style>
+  <title>Profile</title>
+</head>
+<!--navigation bar-->
+
+<body style="background-image: url(profile-bg.png); size: 100%;">
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: white;">HomePage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="network.html">Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+
+          &nbsp; &nbsp;
+          <form class="d-flex" id="searchForm">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+  <!--profile-->
+  <section id="ssPfp">
+    <div style="margin-top: 5%; margin-bottom: 3%; padding-left: 2%; padding-right: 2%;">
+      <div class="row">
+        <div class="col-md-4">
+
+          <center style="margin-top: 5%; margin-bottom: 5%; padding-left: 2%; padding-right: 2%;">
+            <img src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_3.jpg" width="70%"
+              height="auto" class="profile-pictures">
+
+            <h2 style="color: white">Sandra Smith</h2>
+
+          </center>
+
+        </div>
+        <div class="col-md-8 profile-content">
+          <div class="grid-container">
+            <div class="grid-item">
+              <h3>Introduction</h3>
+              <p>Hello! I'm Sandra smith, i am a graphic designer. Graduated from Bonus University batch 2023,
+                and i am looking for a job position as a graphic designer. </p>
+            </div>
+            <div class="grid-item">
+              <h3>Biodata</h3>
+              <p>Name: Sandra Smith <br> Date of Birth: January 1, 1990 <br>
+                Location: Kelapa Gading / North Jakarta, Indonesia <br> Email: sandra.smith@gmail.com</p>
+            </div>
+            <div class="grid-item">
+              <h3>Portfolio</h3>
+              <p>Project 1: Ganara Art Exhibition <br> Project 2: Moja art museum <br>Project 3: Universiity design
+                space project</p>
+            </div>
+            <div class="grid-item">
+              <h3>Work Experience</h3>
+              <p>Mcdonald's - Position : Graphic designer <br>Google - Position: Marketing Team <br> Riot Games -
+                Position: Concept artist </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--JAVASCRIPT-->
+  <script>
+    const profileImage = document.querySelector('.profile-image');
+    profileImage.addEventListener('mouseover', () => {
+      profileImage.style.transform = 'scale(1.2)';
+    });
+    profileImage.addEventListener('mouseout', () => {
+      profileImage.style.transform = 'scale(1)';
+    });
+
+    const gridItems = document.querySelectorAll('.grid-item');
+    gridItems.forEach(item => {
+      item.addEventListener('mouseover', () => {
+        item.style.transform = 'scale(1.1)';
+      });
+      item.addEventListener('mouseout', () => {
+        item.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      this.value = this.value.replace(/\s+/g, '');
+    });
+
+    document.getElementById('searchInput').addEventListener('keydown', function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault(); // prevent the default "Enter" key behavior
+        let inputText = document.getElementById('searchInput').value;
+        if (inputText.length > 0) {
+          document.body.innerHTML = document.body.innerHTML.replace(new RegExp('(' + inputText + ')', 'gi'), '<span class="highlight">$1</span>');
+        }
+      }
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', function () {
+      let inputText = document.getElementById('searchInput').value;
+      if (inputText.length > 0) {
+        document.body.innerHTML = document.body.innerHTML.replace(new RegExp('(' + inputText + ')', 'gi'), '<span class="highlight">$1</span>');
+      }
+    });
+  </script>
+</body>
+
+</html>

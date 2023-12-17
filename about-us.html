@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!--template specifications-->
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+
+  <!--Intergrated CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--MAIN STYLE-->
+  <style>
+    h1 {
+      font-size: xx-large;
+      color: rgb(43, 80, 80);
+      font-family: fantasy;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    .profile-image:hover {
+      transform: scale(1.2);
+    }
+
+    .profile-content {
+      margin-top: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.1)
+    }
+
+    /*the styling for social media-->*/
+    /*a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  } */
+    .highlight {
+      background-color: yellow;
+      position: relative;
+      font-weight: bold;
+    }
+  </style>
+  <title>About Us</title>
+</head>
+
+<body>
+
+
+  <!--navbar structure-->
+  <section id="nav">
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="color: white;">HomePage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="network.html">Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+
+          &nbsp; &nbsp;
+          <form class="d-flex" id="searchForm">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+
+  <!--Prospect Conect Logo-->
+  <section id="FTP">
+    <!--FlipThroughPhotos-->
+    <center>
+      <div class="LOGO">
+        <img src="prospect-connect-shadow.png" width="40%" class="logo-pic">
+      </div>
+    </center>
+  </section>
+
+  <!-- picture carousel scroll left right-->
+  <!-- TO DO: need to make all the text onto a transparent card so it could be responsive-->
+  <div class="aboutusTxtStyle">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="slide1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="slide2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="slide3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous Slide</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next Slide</span>
+      </button>
+    </div>
+  </div>
+  </section>
+
+  <!--Team Member Slides-->
+  <!--TO DO: on page break, resize the pictures to ensure both picture and description could be fitted to 100vm-->
+  <div class="team-members">
+    <br><br>
+    <center>
+      <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; font-size:40px;"> <b> Profiles Of The
+          Members : </b>
+      </h1>
+
+      <br><br>
+    </center>
+
+    <center>
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <div class="Ally">
+
+            <div class="card" style="width: 100%;">
+              <img src="ally.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Almira Farahiyah Shafiqa Rana</h5>
+                <p class="card-text">
+                  Class: L1CC <br>
+                  ID: 2702378956
+                </p>
+                <a href="https://instagram.com/ally.fsr/" class="btn btn-primary">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="Mandy">
+
+            <div class="card" style="width: 100%;">
+              <img src="mandy.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Louisa Mandy Halim</h5>
+                <p class="card-text">
+
+                  Class: L1AC <br>
+                  ID: 2702325552
+                </p>
+                <a href="https://www.instagram.com/louisa.mandy_/" class="btn btn-primary">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="Raisya">
+
+            <div class="card" style="width: 100%;">
+              <img src="raisya.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Raisya Jasmine Zahira</h5>
+                <p class="card-text">
+
+                  Class: L1AC <br>
+                  ID: 2702364761
+
+                </p>
+                <a href="https://www.instagram.com/raisyajasminez/" class="btn btn-primary">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </center>
+
+
+  </div>
+
+  <script>
+    function animateJobCards() {
+      const jobCards = document.querySelectorAll('.card');
+
+      const bounceAnimation = anime({
+        targets: jobCards,
+        translateY: [
+          {value: -10, duration: 500, easing: 'easeInOutQuad'},
+          {value: 0, duration: 500, easing: 'easeInOutQuad'},
+        ],
+        loop: false,
+      });
+
+      document.addEventListener('scroll', () => {
+        bounceAnimation.play();
+      });
+    }
+
+    animateJobCards();
+  </script>
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      this.value = this.value.replace(/\s+/g, '');
+    });
+
+    document.getElementById('searchInput').addEventListener('keydown', function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault(); // prevent the default "Enter" key behavior
+        let inputText = document.getElementById('searchInput').value;
+        if (inputText.length > 0) {
+          document.body.innerHTML = document.body.innerHTML.replace(new RegExp('(' + inputText + ')', 'gi'), '<span class="highlight">$1</span>');
+        }
+      }
+    });
+
+    document.getElementById('searchBtn').addEventListener('click', function () {
+      let inputText = document.getElementById('searchInput').value;
+      if (inputText.length > 0) {
+        document.body.innerHTML = document.body.innerHTML.replace(new RegExp('(' + inputText + ')', 'gi'), '<span class="highlight">$1</span>');
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

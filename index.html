@@ -1,0 +1,592 @@
+<!DOCTYPE html> <!-- index.html is the homepage, can't change the main html page other than 'index.html' dunno why -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- dont forget to add a search bar inside the navigation bar -->
+
+  <!--TODO
+          create a max, height for the navbar-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Running the template-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI/tZ1hW3cS1zl6I1aPcnSbJqS2PFXKVIHPpHVY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!--CSS style sheet integration-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    h1 {
+      font-size: xx-large;
+      color: rgb(43, 80, 80);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /*Welcome Sandra Smith Logo*/
+    .welcLogCon {
+      width: 50vh;
+      height: auto;
+      background-color: #ffffff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+    }
+
+    .welcLogCon img {
+      padding-top: 5vh;
+      padding-bottom: 5vh;
+      width: 100%;
+      height: auto;
+    }
+
+    /*text card*/
+    .center-card {
+      padding: 10vh 0;
+      background-color: rgba(237, 237, 237, 0.452);
+    }
+  </style>
+
+  <title>Homepage</title>
+</head>
+
+<!--start of page-->
+
+<body>
+
+  <!--navbar structure-->
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: white;">HomePage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="network.html">Network</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+        </ul>
+
+        &nbsp; &nbsp;
+        <form class="d-flex" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+
+    </div>
+    </div>
+  </nav>
+  <!--SECTION: WELCOME-->
+  <section id="welcome">
+    <div id="image-container">
+      <img src="homepage-bg2.png" style="width: 100%; height: 100vh; object-fit: cover;">
+      <div class="overlay-text">
+        <p> <b> Find Your <br> Dream Job <br> Here </b> </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--SECTION: WELCOME SANDRA SMITH-->
+  <section id="SSWelcome">
+    <div class="welcLogCon">
+      <center>
+        <img src="prospect-connect-shadow.png">
+      </center>
+    </div>
+    <!--
+            About Sandra Smith
+            TO DO: make card responsive, make logo responsive
+            -->
+
+    <!-- NEW CARD -->
+    <center>
+      <div class="card" style="width: auto;">
+        <div class="center-card">
+          <h2 class="card-title"> <b> Welcome, Sandra Smith! </b> </h2>
+          <p class="card-text">
+
+            Prospect Connect is a business and employment-focused social media platform, the platform is primarily used
+            for professional networking and career development, and allows jobseekers to post their CVs and employers to
+            post jobs. personal networking site to assist and organized employment opportunities for an individual.
+
+            We hope you can find what you are looking for in Prospect Connect!!
+        </div>
+      </div>
+    </center>
+  </section>
+
+
+
+
+
+  </div>
+
+  <!--Suggested Jobs-->
+  <section id="jobs">
+    <div class="bg-image">
+
+      <center>
+        <br><br>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; "> <b> SUGGESTED JOBS </b> </h1>
+
+        <br><br>
+        <center>
+
+          <div class="BUTTON">
+            <button class="filter-btn active" data-category="all"> Show all Locations </button>
+            <button class="filter-btn" data-category="s-jkt"> South Jakarta </button>
+            <button class="filter-btn" data-category="n-jkt"> North Jakarta </button>
+
+        </center>
+
+
+
+
+        <div class="gallery">
+          <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
+
+            <div class="row">
+
+              <div class="gallery-item s-jkt col-md-4">
+                <div class="card" style="max-width: 100%;">
+                  <!-- set the width of the card -->
+                  <img src="job1-marketing.png" class="card-img-top">
+                  <div class="card-body">
+                    <br>
+                    <center>
+                      <h5 class="card-title"> <b> Currently looking for: <br> Sales / Marketing </b> </h5>
+                    </center>
+                    <br>
+                    <div class="row">
+                      <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                          Job Requirements
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample1">
+                        <!-- make sure the id name for every card is different, so it won't collapse all at once-->
+                        <!--make all cards the same width and height!!!-->
+                        <div class="card card-body">
+                          <b>Sales / Marketing </b>
+
+                          <b>Requirements: </b> <br>
+                          - Bachelor's degree / all majors <br>
+                          - have experience in creating a marketing promotion/event. <br>
+                          - Experienced in Handling Partnership. <br>
+                          - Good Communication Skill, Creative, and Agile. <br>
+                          - Able to use Adobe Illustrator is a plus. <br>
+                          - Able to use Microsoft Office: Excel, Word, PPT. <br>
+                          - Willing to do create content for social media.<br>
+                          <br>
+                          Location: Kebayoran baru, South Jakarta <br>
+                          <b>Send your Resume to :</b>
+
+                          Focus.dlab@gmail.com
+                          <br>
+                          <b>Subject: </b>
+                          Marketing_Name
+                          <br> <br>
+                          APPLY NOW!
+                          <a href="https://www.instagram.com/p/C0bJL33hh-m/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+                            class="btn btn-primary">More Info</a>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="gallery-item s-jkt col-md-4">
+                <div class="card" style="max-width: 100%;">
+                  <img src="job2-kitchen.png" class="card-img-top">
+                  <div class="card-body">
+                    <br>
+                    <center>
+                      <h5 class="card-title"> <b> Currently looking for: <br> Kitchen Crew </b> </h5>
+                    </center>
+                    <br>
+                    <div class="row">
+                      <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                          Job Requirements
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+
+                          <b>
+                            Kitchen Crew <br>
+                            Fulltime
+                          </b>
+                          <br>
+                          <b>Qualification: </b> <br>
+                          • Minimum SMA/SMK <br>
+                          • Man/Women <br>
+                          • Basic Cooking abilities <br>
+                          • Experience/Preferably Culinary Arts Graduate <br>
+                          • Good Attitude, Discipline, Honest <br>
+                          • Hard Worker <br>
+                          • Willing To Work As A Team <br>
+                          • Able To Work Flexible Hours <br>
+                          • Able To Follow All SOP <br>
+                          • Excellent Use Of Various Cooking Methods, <br>
+                          • Ingredients, Equipment, Tools, and Processes <br>
+                          • Demonstrates Concern For Kitchen Cleanlines & <br>
+                          • Personal Hygiene <br>
+                          <br>
+                          Location: Bintaro, South Jakarta<br>
+                          <b>
+                            send your resume to: <br>
+                          </b>
+                          recruitmentbintaro@gmail.com <br>
+                          <br>
+
+                          APPLY NOW!<br>
+                          <a href="https://www.instagram.com/p/C0Ycairhbae/?utm_source=ig_web_button_share_sheet&igshid=MzRlODBiNWFlZA=="
+                            class="btn btn-primary">More Info</a>
+                        </div>
+
+
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="gallery-item s-jkt col-md-4">
+                <div class="card" style="max-width: 100%;">
+                  <!-- set the width of the card -->
+                  <img src="job3.png" class="card-img-top">
+                  <div class="card-body">
+                    <br>
+                    <center>
+                      <h5 class="card-title"> <b> Currently looking for: <br> Head Of Influencer </b> </h5>
+                    </center>
+                    <br>
+                    <div class="row">
+                      <p class="d-inline-flex gap-3">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                          Job Requirements
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample3">
+                        <!-- make sure the id name for every card is different, so it won't collapse all at once-->
+                        <div class="card card-body">
+
+
+                          <b>Requirements: </b> <br>
+                          - Minimum +6 years of experience in creator management, digital marketing, or related fields
+                          <br>
+                          - Proven track record in driving successful creator/influencer marketing campaigns and
+                          achieving
+                          revenue targets <br>
+                          - Experience in managing a team and leading cross-functional collaborations <br>
+                          - In-depth knowledge of social media platforms, especially Meta and TikTok, and experience
+                          working
+                          with creators on these platforms <br>
+                          - Strong analytical skills and strategic thinking, with the ability to use data to inform
+                          decisions
+                          <br>
+                          - Excellent communication and relationship-building skills with both creators and internal
+                          teams
+                          <br>
+                          - Bachelor's or Master's degree in Marketing, Business Administration, or related fields <br>
+                          <br>
+                          Location: East Kuningan, South Jakarta<br>
+                          <b>Apply Here:</b>
+
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBgAptbyR_l7UngTofdzP30oNQFF_VtKxv2qHc7nq9XU64qg/viewform"
+                            class="btn btn-primary">More Info</a>
+
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- make new card from here -->
+
+              <div class="container" style="padding-top: 5%; padding-bottom: 5%;">
+
+                <div class="row">
+
+                  <div class="gallery-item s-jkt col-md-4">
+                    <div class="card" style="max-width: 100%;">
+                      <!-- set the width of the card -->
+                      <img src="job4.png" class="card-img-top">
+                      <div class="card-body">
+                        <br>
+                        <center>
+                          <h5 class="card-title"> <b> Currently looking for: <br> Graphic Designer </b> </h5>
+                        </center>
+                        <br>
+                        <div class="row">
+                          <p class="d-inline-flex gap-1">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                              Job Requirements
+                            </button>
+                          </p>
+                          <div class="collapse" id="collapseExample4">
+                            <!-- make sure the id name for every card is different, so it won't collapse all at once-->
+                            <!--make all cards the same width and height!!!-->
+                            <div class="card card-body">
+                              <b>Graphic Design</b>
+
+                              <b>Requirements: </b> <br>
+
+
+                              - Minimum Age 22 <br>
+                              - education SMA/SMK MULTIMEDIA/ graphic designer <br>
+                              - Adobe Illustrator, Photoshop, Indesign <br>
+                              - Honest, responsible, discipline <br>
+                              - able to learn and work well in a team <br>
+                              - IOS user <br>
+                              Location: Kemayoran, South Jakarta<br>
+
+
+                              <br>
+                              <b>Website :</b>
+
+                              <a href="www.elncostudio.com" class="btn btn-primary"> Click Here </a>
+                              <br>
+
+                              APPLY NOW!
+                              <a href="http://bit.ly/46Wl7sk" class="btn btn-primary">More Info</a>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="gallery-item n-jkt col-md-4">
+                    <div class="card" style="max-width: 100%;">
+                      <img src="job5.png" class="card-img-top">
+                      <div class="card-body">
+                        <br>
+                        <center>
+                          <h5 class="card-title"> <b> Currently looking for: <br> Creative Design </b> </h5>
+                        </center>
+                        <br>
+                        <div class="row">
+                          <p class="d-inline-flex gap-1">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                              Job Requirements
+                            </button>
+                          </p>
+                          <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+
+                              <b>
+                                Creative Design Team
+                              </b>
+                              <br>
+                              <b>Requirements : </b> <br>
+                              • Fresh graduate (art/design/creative multimedia and others) <br>
+                              • Familiar with Adobe Illustrator, Photoshop, Premier Pro, Capcut and Canva <br>
+                              • Passionate in social media trends <br>
+                              • Basic skills in photography, videography and typography <br>
+                              • Good Attitude, Discipline, Honest <br>
+                              • Hard Worker <br>
+                              • Willing To Work As A Team <br>
+                              • Fluent in english (verbal and written)<br>
+                              • Able To Follow All SOP <br>
+                              Location : Kelapa Gading, North Jakarta<br>
+
+                              <br>
+                              <b>
+                                send your resume to: <br>
+                              </b>
+                              dicekitchen.id@gmail.com<br>
+                              <br>
+
+                              APPLY NOW!<br>
+
+                              <a href="https://www.instagram.com/p/C0qTCAJBeIg/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+                                class="btn btn-primary">More Info</a>
+                            </div>
+
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="gallery-item n-jkt col-md-4">
+                    <div class="card" style="max-width: 100%;">
+                      <!-- set the width of the card -->
+                      <img src="job6.png" class="card-img-top">
+                      <div class="card-body">
+                        <br>
+                        <center>
+                          <h5 class="card-title"> <b> Currently looking for: <br> Creative Marketing </b> </h5>
+                        </center>
+                        <br>
+                        <div class="row">
+                          <p class="d-inline-flex gap-3">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                              Job Requirements
+                            </button>
+                          </p>
+                          <div class="collapse" id="collapseExample6">
+                            <!-- make sure the id name for every card is different, so it won't collapse all at once-->
+                            <div class="card card-body">
+
+
+                              <b>Requirements: </b> <br>
+                              - Experienced in making strong and engaging content
+                              <br>
+                              - Able to create social media content plans and brand equity <br>
+                              - Experience in managing a team and leading cross-functional collaborations <br>
+                              - In-depth knowledge of social media platforms, especially Meta and TikTok, and experience
+                              working with creators on these platforms <br>
+                              -
+                              <br>
+                              - Excellent communication and relationship-building skills with both creators and internal
+                              teams
+                              <br>
+                              - Have great taste in F&B especilly Coffee shops
+                              <br>
+                              Location: Kelapa Gading, North Jakarta
+                              <br>
+                              <b>Send you resume here:</b>
+                              recruitment.iloh.holding@gmail.com
+
+                              <b>Apply Here:</b>
+
+                              <a href="https://www.instagram.com/p/CtNxp-DB0Iy/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+                                class="btn btn-primary">More Info</a>
+
+
+                              <br>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Gallery Filter, filter out the jobs according to each of their locations-->
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $('.filter-btn').click(function () {
+                var category = $(this).data('category');
+                filterImages(category);
+              });
+
+              function filterImages(category) {
+                if (category === 'all') {
+                  $('.gallery-item').show();
+                } else {
+                  $('.gallery-item').hide();
+                  $('.' + category).show();
+                }
+              }
+            });
+          </script>
+
+
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1"></script>
+  <script>
+    function animateJobCards() {
+      const jobCards = document.querySelectorAll('.card');
+      const bounceAnimation = anime({
+        targets: jobCards,
+        translateY: [
+          {value: -10, duration: 500, easing: 'easeInOutQuad'},
+          {value: 0, duration: 500, easing: 'easeInOutQuad'},
+        ],
+        loop: false,
+      });
+      document.addEventListener('scroll', () => {
+        bounceAnimation.play();
+      });
+    }
+    animateJobCards();
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#searchForm").submit(function (e) {
+        e.preventDefault();
+        handleSearch();
+      });
+    });
+
+    function handleSearch() {
+      const searchValue = $('#searchInput').val();
+      removeHighlights();
+
+      if (searchValue) {
+        const regex = new RegExp(searchValue, 'gi');
+        const textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+
+        let node;
+        while (node = textNodes.nextNode()) {
+          const matches = node.nodeValue.match(regex);
+          if (matches) {
+            const replacedNode = document.createElement('span');
+            replacedNode.innerHTML = node.nodeValue.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+            node.replaceWith(replacedNode);
+          }
+        }
+      }
+    }
+
+    function removeHighlights() {
+      $('.highlight').removeClass('highlight');
+    }
+  </script>
+
+</body>
+
+</html>

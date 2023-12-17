@@ -1,0 +1,301 @@
+/*STYLING APPLIED TO ALL*/
+/*navigation bar ALL*/
+.nav-item {
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/*FONT STYLING ALL*/
+.p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  padding: 10px auto;
+}
+
+/*LOGO ALL*/
+.LOGO {
+  background-color: white;
+}
+
+.logo-pic {
+  background-color: rgb(255, 255, 255);
+}
+
+/*BODY ALL*/
+
+body {
+  padding-top: 56px;
+  background-color: transparent;
+  color: black;
+}
+
+/*CARD ALL*/
+.card-subtitle,
+.card-title {
+  text-align: center;
+}
+
+/*BACKGROUND IMAGE ALL:*/
+.message-page,
+.team-members,
+.bg-image {
+  background-image: url(bg2.jpg), url(bg3.jpg);
+}
+
+/* ------------------------------------*/
+
+
+
+/*PAGE SPECIFIC CSS*/
+
+/*Index:*/
+#SSWelcome {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+#welcome {
+  height: 100vh;
+}
+
+#image-container {
+  width: auto;
+  height: 100%
+}
+
+.job-req {
+  text-align: left;
+
+}
+
+.overlay-text {
+  position: absolute;
+  top: 10%;
+  bottom: auto;
+  margin: auto;
+  color: white;
+  padding-left: 5%;
+  font-size: 50px;
+  text-size-adjust: auto;
+}
+
+.homepage-bg {
+  background-image: url(homepage-bg2.png);
+}
+
+.job-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job-card {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: black;
+}
+
+/* Profile: 
+        setting the edge of the pictures border */
+.profile-pictures {
+  border-radius: 100%;
+}
+
+.profile-pic {
+  border-radius: 15%;
+  padding-bottom: 5%;
+}
+
+.profile-container {
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.profile-image:hover {
+  transform: scale(1.2);
+}
+
+.profile-content {
+  margin-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  margin-bottom: 20px;
+}
+
+.grid-item:hover {
+  transform: scale(1.1);
+}
+
+
+
+/*About us: 
+        team member profiles */
+.profiles {
+  border-radius: 100%;
+}
+
+.Biodata {
+  padding-left: 4%;
+}
+
+/*Network 
+/*making the pictures responsive */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/*-------------UNSECTIONED-------------*/
+
+/* Job-List is the div containing all the cards, making it a div class makes it easier to set the color and position */
+.JOB-LIST {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+/* color swatches 
+#1b4d89 #f9e45b #6db784 #ffffff #e6ca8e 
+*/
+
+body {
+  color: white;
+
+}
+
+.sandra-smith {
+  padding-left: 200px;
+}
+
+
+
+.chat-container {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.question-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  padding: 10px;
+  margin: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    width: 400px;
+
+/* Site Dialogue 
+Make sure All Dialogues to Sandra Smith uses masking
+*/
+
+.mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(background-image2.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+
+
+
+/* make each section fill the entire page*/
+.welcome {
+  width: auto;
+  height: 100vh;
+}
+
+.logoClass {
+  padding: 20% auto;
+}
+
+.aboutusTxtStyle {
+  background-color: transparent;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .job-card {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+
+
+.highlight {
+  background-color: yellow;
+  position: relative;
+  font-weight: bold;
+}

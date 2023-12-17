@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--embedded styling-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #495057;
+    }
+
+    .faq-container {
+      background-color: transparent;
+    }
+
+    h2 {
+      color: white;
+    }
+  </style>
+  <title>FAQ</title>
+</head>
+
+<body>
+  <!--navbar structure-->
+  <nav class="navbar navbar-expand-lg bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: white;">HomePage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="network.html">Network</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+        </ul>
+
+        &nbsp; &nbsp;
+        <form class="d-flex" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+
+    </div>
+    </div>
+  </nav>
+
+  <!--message page-->
+  <div class="message-page">
+    <center>
+      <img src="prospect-connect2.png" width="50%">
+    </center>
+
+    <center>
+      <br>
+      <h2>Frequently Asked Questions</h2>
+    </center>
+    <div class="container">
+      <div class="faq-container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div id="accordion" style="padding-top: 5%; padding-bottom: 5%;">
+
+
+
+
+              <!-- FAQ Item 1 -->
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <span class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      What is Prospect Connect?
+                    </span>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Prospect Connect is a job finder platform, the platform is primarily used
+                    for professional networking and career development, and allows jobseekers to post their CVs and
+                    employers to
+                    post jobs. personal networking site to assist and organized employment opportunities for an
+                    individual.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <span class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Does Prospect Connect offers hybrid and fulltime jobs?
+                    </span>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Yes, we do. It depends on the suggested jobs feed showed on your homepage.
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <span class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
+                      How do I know if I get a job offer on the website?
+                    </span>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Callbacks are showed in the network page, there will be job offers provided on your page when
+                    companies reply back to you.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ... Your existing HTML ... -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $(".card-header").click(function () {
+              $(this).find(".btn").toggleClass("collapsed");
+              $(this).next(".collapse").slideToggle();
+            });
+          });
+        </script>
+        <script>
+          $(document).ready(function () {
+            $("#searchForm").submit(function (e) {
+              e.preventDefault();
+              handleSearch();
+            });
+          });
+
+          function handleSearch() {
+            const searchValue = $('#searchInput').val();
+            removeHighlights();
+
+            if (searchValue) {
+              const regex = new RegExp(searchValue, 'gi');
+              const textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+
+              let node;
+              while (node = textNodes.nextNode()) {
+                const matches = node.nodeValue.match(regex);
+                if (matches) {
+                  const replacedNode = document.createElement('span');
+                  replacedNode.innerHTML = node.nodeValue.replace(regex, (match) => `<span class="highlight">${match}</span>`);
+                  node.replaceWith(replacedNode);
+                }
+              }
+            }
+          }
+
+          function removeHighlights() {
+            $('.highlight').removeClass('highlight');
+          }
+        </script>
+</body>
+
+</html>
